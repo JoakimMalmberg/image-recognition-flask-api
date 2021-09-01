@@ -43,7 +43,7 @@ model.load_weights(checkpoint_path)
 
 EPOCHS = 40
 hist = model.fit(x_train, y_train_one_hot,
-                 batch_size = 256,
+                 batch_size = 32,
                  epochs = EPOCHS,
                  validation_split = 0.2,
                  callbacks=[cp_callbacks])
